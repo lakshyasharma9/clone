@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Platforms - Pepperstone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Cookie Banner -->
+    <div class="bg-gray-100 border-b border-gray-200 py-3 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-700 mb-2 md:mb-0">
+                We use cookies to provide you with the best possible experience. By continuing to use this website, you agree to our use of cookies. 
+                <a href="https://eu-assets.contentstack.com/v3/assets/bltaec35894448c7261/blt4850f32e3681dfc5/SCB_Cookie_Policy_ROW.pdf" class="underline">Cookie Policy.</a>
+            </p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-md text-sm">Close</button>
+        </div>
+    </div>
+
+    <!-- Risk Warning -->
+    <div class="bg-white-600 text-black py-2 px-4">
+        <div class="container mx-auto text-center text-sm">
+            CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong> You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+        </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <div class="bg-black-100 py-2 px-4 border-b">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Pro</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Partners</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Help and support</a>
+            </div>
+            <div class="relative">
+                <button class="flex items-center text-gray-700 hover:text-blue-600">
+                    <span class="mr-1">English</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">繁体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ไทย</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tiếng Việt</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">لغة عربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <img src="public/download.svg" alt="Pepperstone" class="h-10">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-6">
+                    <div class="dropdown relative">
+                        <a href="ways-to-trade.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Ways to trade <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Trading accounts</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Premium clients</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pricing</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Professional</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Active trader program</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="markets.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Markets <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Forex CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Commodity CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cryptocurrency CFDs</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shares CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ETF CFDs</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-blue-600 hover:text-blue-700 flex items-center border-b-2 border-blue-600 pb-4">
+                            Trading platforms <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">TradingView</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 5</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Pepperstone platform</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 4</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="market-analysis.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Market analysis <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Navigating markets</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Daily Fix</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meet the analysts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                            About us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Who we are</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Awards</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Careers</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md">
+                        Open account
+                    </button>
+                    <button class="text-blue-600 hover:text-blue-700 border border-blue-600 px-6 py-2 rounded-md">
+                        Log in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                        Trading platforms
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Trade on award-winning platforms with lightning-fast execution, advanced charting tools, and institutional-grade infrastructure.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold">
+                            Open account
+                        </button>
+                        <button class="text-blue-600 hover:text-blue-700 border border-blue-600 px-8 py-3 rounded-md font-semibold">
+                            Try demo
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <img src="public/Platforms_header_2x.webp" alt="Trading Platforms" class="max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Trade your way with advanced third-party platforms
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- MT5 Card -->
+                <div class="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">MT5</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        An even-more powerful version of MetaTrader? Let more markets, more order types, more features be your answer.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- MT4 Card -->
+                <div class="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">MT4</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Automate your trading with the definitive FX platform. Customise with indicators, EAs and pattern-recognition software.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- TradingView Card -->
+                <div class="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">TradingView</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Trade directly through show-stopping charts, with hundreds of in-built indicators and strategies.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- cTrader Card -->
+                <div class="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">cTrader</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Replicate an institutional liquidity environment and develop trading robots to automate on your behalf.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pepperstone Platform Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                        Discover the Pepperstone trading platform
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Enjoy a secure and streamlined trading experience on our flagship platform and app. Equipped with the tools you need - and spared the ones you don't.
+                    </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold">
+                        Find out more
+                    </button>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <img src="public/Platforms-HomePage-Hero-CarouselBanner-1920x1080px.webp" alt="Pepperstone Trading Platform" class="max-w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Comparison Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Compare our platforms at a glance
+                </h2>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-sm">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="text-left p-6 w-1/4"></th>
+                            <th class="text-center p-6">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-2">
+                                        <span class="text-white font-bold text-sm">P</span>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">Pepperstone</span>
+                                </div>
+                            </th>
+                            <th class="text-center p-6">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-2">
+                                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">MT5</span>
+                                </div>
+                            </th>
+                            <th class="text-center p-6">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-2">
+                                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">MT4</span>
+                                </div>
+                            </th>
+                            <th class="text-center p-6">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-2">
+                                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">TradingView</span>
+                                </div>
+                            </th>
+                            <th class="text-center p-6">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-2">
+                                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">cTrader</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Desktop platforms</td>
+                            <td class="p-6 text-center text-gray-600">Desktop platforms</td>
+                            <td class="p-6 text-center text-gray-600">Windows</td>
+                            <td class="p-6 text-center text-gray-600">Windows</td>
+                            <td class="p-6 text-center text-gray-600">Windows</td>
+                            <td class="p-6 text-center text-gray-600">Windows, Mac OS, Linux</td>
+                            <td class="p-6 text-center text-gray-600">Windows</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Browser version</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">App</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Android support</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">iOS support</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">1350+ instruments</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">EAs/automated trading</td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Back testing</td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Customisable charts/indicators</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Adjustable session times</td>
+                            <td class="p-6 text-center text-gray-600">Localised to client time zones</td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Market depth</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Historical data</td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Detachable Charts</td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Cloud-hosting</td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                            <td class="p-6 text-center"><i class="fas fa-check text-green-500 text-xl"></i></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Share CFDs</td>
+                            <td class="p-6 text-center text-gray-600">1400</td>
+                            <td class="p-6 text-center"><span class="w-6 h-6 bg-gray-300 rounded-full inline-block"></span></td>
+                            <td class="p-6 text-center text-gray-600">1400</td>
+                            <td class="p-6 text-center text-gray-600">1400</td>
+                            <td class="p-6 text-center text-gray-600">1400</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">FX CFDs</td>
+                            <td class="p-6 text-center text-gray-600">93</td>
+                            <td class="p-6 text-center text-gray-600">93</td>
+                            <td class="p-6 text-center text-gray-600">93</td>
+                            <td class="p-6 text-center text-gray-600">93</td>
+                            <td class="p-6 text-center text-gray-600">93</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Indices CFDs</td>
+                            <td class="p-6 text-center text-gray-600">26</td>
+                            <td class="p-6 text-center text-gray-600">26</td>
+                            <td class="p-6 text-center text-gray-600">26</td>
+                            <td class="p-6 text-center text-gray-600">26</td>
+                            <td class="p-6 text-center text-gray-600">26</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Commodity CFDs</td>
+                            <td class="p-6 text-center text-gray-600">40</td>
+                            <td class="p-6 text-center text-gray-600">40</td>
+                            <td class="p-6 text-center text-gray-600">40</td>
+                            <td class="p-6 text-center text-gray-600">40</td>
+                            <td class="p-6 text-center text-gray-600">40</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-medium text-gray-900">Cryptocurrency CFDs</td>
+                            <td class="p-6 text-center text-gray-600">31</td>
+                            <td class="p-6 text-center text-gray-600">31</td>
+                            <td class="p-6 text-center text-gray-600">31</td>
+                            <td class="p-6 text-center text-gray-600">31</td>
+                            <td class="p-6 text-center text-gray-600">31</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-medium text-gray-900">ETF CFDs</td>
+                            <td class="p-6 text-center text-gray-600">95</td>
+                            <td class="p-6 text-center text-gray-600">95</td>
+                            <td class="p-6 text-center text-gray-600">95</td>
+                            <td class="p-6 text-center text-gray-600">95</td>
+                            <td class="p-6 text-center text-gray-600">95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools and Integrations Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Fulfil your potential with the best tools and integrations
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- CopyTrading by Pepperstone -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 border-2 border-gray-400 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-2xl text-gray-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">CopyTrading by Pepperstone</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Unlock a vast network of expert traders. Browse thousands of signal providers and seamlessly copy their trades using your MT4/MT5 account.
+                    </p>
+                </div>
+
+                <!-- cTrader Automate -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">cTrader Automate</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Use cTrader's API and C# language to create trading strategies that execute on your behalf, and take your backtesting up a notch.
+                    </p>
+                </div>
+
+                <!-- cTrader Copy -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 border-2 border-gray-400 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-2xl text-gray-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">cTrader Copy</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Copy successful traders' strategies or share your own for others to follow - all within the cTrader platform.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- MetaTrader Smart Trader -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 border-2 border-gray-400 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-desktop text-2xl text-gray-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">MetaTrader Smart Trader</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Optimise your strategy with 28 indicators and EAs, including Trade Terminal and Correlation Matrix, exclusively via the MetaTrader platforms.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- APIs -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-12 h-12 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6 2h12v2H6V2zm0 18h12v2H6v-2zM2 6h2v12H2V6zm18 0h2v12h-2V6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">APIs</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Tech whizz? Develop custom-built systems for automated trading, and connect your own front-end solutions to our elite execution technology and pricing.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Algo trading -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-12 h-12 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6 2h4v4H6V2zm8 0h4v4h-4V2zM6 10h4v4H6v-4zm8 0h4v4h-4v-4zM6 18h4v4H6v-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Algo trading</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Whether you're buying pre-made algorithms or coding your own, execute them seamlessly with our suite of cutting-edge tech.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- VPS hosting -->
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-12 h-12 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3h18v4H3V3zm0 6h18v4H3V9zm0 6h18v4H3v-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">VPS hosting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Elevate your algorithmic trading experience with ultra-low latency, and get frictionless 24-hour connectivity to our trading environment.
+                    </p>
+                    <button class="text-blue-600 hover:text-blue-700 flex items-center justify-center mx-auto">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TradingView Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                        Free TradingView subscription
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Get more from your technical analysis with superior charting, custom timeframes, 20 active alerts and more. Eligibility criteria apply.
+                    </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold">
+                        Find out more
+                    </button>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <img src="public/Tradingview25-LPLandingPage-HeroBannerHalf-960x600-01.webp" alt="TradingView Platform" class="max-w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Pepperstone Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Why choose Pepperstone?
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Ultra-fast execution -->
+                <div class="text-center">
+                    <div class="w-16 h-16 border-2 border-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Ultra-fast execution</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Speeds from 50 milliseconds, with a 99.68% fill rate and no dealer intervention.<sup>1</sup>
+                    </p>
+                </div>
+
+                <!-- Competitive pricing -->
+                <div class="text-center">
+                    <div class="w-16 h-16 border-2 border-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Competitive pricing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Get spreads from 0.0 points on our Razor account,<sup>2</sup> plus deep liquidity from Tier 1 banks.
+                    </p>
+                </div>
+
+                <!-- 24-hour US share CFDs -->
+                <div class="text-center">
+                    <div class="w-16 h-16 border-2 border-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">24-hour US share CFDs</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We're here to help you around the clock Monday to Friday, and 18 hours at weekends.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Trade Better Section -->
+    <section class="bg-blue-600 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                    Ready to trade better?
+                </h2>
+                <p class="text-xl text-blue-100 mb-8">
+                    Switch to Pepperstone now and join our global community of over 750,000 traders.<sup>3</sup> Apply in minutes with our simple application process.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-white mb-4">1</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Register</h3>
+                    <p class="text-blue-100">
+                        Sign up with your email address and get a free demo.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-white mb-4">2</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Answer</h3>
+                    <p class="text-blue-100">
+                        We'll check your suitability for our products.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-white mb-4">3</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Verify</h3>
+                    <p class="text-blue-100">
+                        Your safety is our top priority.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-white mb-4">4</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Fund</h3>
+                    <p class="text-blue-100">
+                        That's it! You're ready to trade.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-blue-500 hover:bg-blue-400 text-white px-8 py-3 rounded-md font-semibold text-lg">
+                    Apply now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footnotes Section -->
+    <section class="bg-white py-8 border-t">
+        <div class="container mx-auto px-4">
+            <div class="text-sm text-gray-600 space-y-2">
+                <p><sup>1</sup>99.68%. Fill rates are based on all trades data between 01/04/2025 and 30/06/2025</p>
+                <p><sup>2</sup>Other fees and charges apply.</p>
+                <p><sup>3</sup>Data correct as of April 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Other sites -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Other sites</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Trade Off</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Partners</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Group</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Ways to trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Ways to trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading accounts</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pro</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Active Trader program</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Refer a friend</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading hours</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Platforms -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Platforms</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading Platforms</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading tools</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Markets & Symbols -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Markets & Symbols</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Forex</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Shares</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">ETFs</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Commodities</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Currency indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Cryptocurrencies</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">CFD Forwards</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Additional Footer Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Analysis -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Analysis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Navigating Markets</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Daily Fix</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Meet the analysts</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Learn to Trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Learn to Trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading guides</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Videos</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Webinars</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex items-center mb-6">
+                    <img src="public/download.svg" alt="Pepperstone" class="h-8">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-gray-900">support@pepperstone.com</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">1786 628 1209</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">#1 Pineapple House,</p>
+                        <p class="text-gray-900">Old Fort Bay, Nassau,</p>
+                        <p class="text-gray-900">New Providence, The Bahamas</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex flex-wrap gap-8 mb-8">
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Legal documents</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Privacy policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Website terms and conditions</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Cookie policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Sitemap</a>
+                </div>
+                
+                <div class="text-sm text-gray-600 space-y-4">
+                    <p>© 2025 Pepperstone Markets Limited | Company registration number 177174 B | SIA-F217</p>
+                    
+                    <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.</p>
+                    
+                    <p><strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong></p>
+                    
+                    <p>You should consider whether you understand how CFDs work, and whether you can afford to take the high risk of losing your money.</p>
+                    
+                    <p>You don't own or have rights in the underlying assets. Past performance is no indication of future performance and tax laws are subject to change. The information on this website is general in nature and doesn't take into account your or your client's personal objectives, financial circumstances, or needs. Please read our <a href="#" class="text-blue-600 hover:text-blue-700">RDN</a> and other <a href="#" class="text-blue-600 hover:text-blue-700">legal documents</a> and ensure you fully understand the risks before you make any trading decisions. We encourage you to seek independent advice.</p>
+                    
+                    <p>Pepperstone Markets Limited is located at</p>
+                    
+                    <p>#1 Pineapple House, Old Fort Bay, Nassau, New Providence, The Bahamas</p>
+                    
+                    <p>and is licensed and regulated by The Securities Commission of The Bahamas,( SIA-F217).</p>
+                    
+                    <p>The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

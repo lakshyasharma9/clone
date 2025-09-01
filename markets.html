@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets - Pepperstone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Cookie Banner -->
+    <div class="bg-gray-100 border-b border-gray-200 py-3 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-700 mb-2 md:mb-0">
+                We use cookies to provide you with the best possible experience. By continuing to use this website, you agree to our use of cookies. 
+                <a href="https://eu-assets.contentstack.com/v3/assets/bltaec35894448c7261/blt4850f32e3681dfc5/SCB_Cookie_Policy_ROW.pdf" class="underline">Cookie Policy.</a>
+            </p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-md text-sm">Close</button>
+        </div>
+    </div>
+
+    <!-- Risk Warning -->
+    <div class="bg-white-600 text-black py-2 px-4">
+        <div class="container mx-auto text-center text-sm">
+            CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong> You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+        </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <div class="bg-black-100 py-2 px-4 border-b">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Pro</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Partners</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Help and support</a>
+            </div>
+            <div class="relative">
+                <button class="flex items-center text-gray-700 hover:text-blue-600">
+                    <span class="mr-1">English</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">繁体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ไทย</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tiếng Việt</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">لغة عربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <img src="public/download.svg" alt="Pepperstone" class="h-10">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-6">
+                    <div class="dropdown relative">
+                        <a href="ways-to-trade.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Ways to trade <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Trading accounts</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Premium clients</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pricing</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Professional</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Active trader program</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-blue-600 hover:text-blue-700 flex items-center border-b-2 border-blue-600 pb-4">
+                            Markets <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Forex CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Commodity CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cryptocurrency CFDs</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shares CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ETF CFDs</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="trading-platforms.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Trading platforms <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">TradingView</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 5</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Pepperstone platform</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 4</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="market-analysis.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Market analysis <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Navigating markets</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Daily Fix</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meet the analysts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                            About us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Who we are</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Company news</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Company awards</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Login</a>
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md">Join now</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white py-4">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-600">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-900">Markets</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="bg-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <h1 class="text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                        Where better trades... the world's major financial markets
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        You'll never be stuck for opportunities to trade with Pepperstone – with more than 1400 CFDs available across every major asset class.
+                    </p>
+                    
+                    <div class="flex space-x-4">
+                        <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded-md font-medium">
+                            Try a demo
+                        </button>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium">
+                            Join now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right Image -->
+                <div class="flex justify-center lg:justify-end">
+                    <img src="public/Markets_Overview.webp" alt="Markets Overview" class="w-full max-w-lg">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- What financial markets section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">What financial markets can I trade with Pepperstone?</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+                    We offer CFD trading on everything from forex to Netflix shares, with competitive pricing, advanced trading tech and reliable execution across the board.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Forex -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-chart-line text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Forex</h3>
+                    <p class="text-gray-600 mb-6">
+                        Choose from 90+ currency pairs spanning majors, minors, crosses and exotics – all
+                    </p>
+                </div>
+                
+                <!-- Indices -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-desktop text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Indices</h3>
+                    <p class="text-gray-600 mb-6">
+                        Trade on more than 20 major stock indices – including the US30, UK100 and GER30 – with
+                    </p>
+                </div>
+                
+                <!-- Shares -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-arrow-up text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Shares</h3>
+                    <p class="text-gray-600 mb-6">
+                        Trade the global stock market with 1100+ underlying shares and 24-hour availability<sup>1</sup> on a range of US companies.
+                    </p>
+                </div>
+                
+                <!-- Commodities -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-coins text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Commodities</h3>
+                    <p class="text-gray-600 mb-6">
+                        Explore the potential of energies, metals and more, with 40 markets including Crude Oil, Gold and Natural Gas.
+                    </p>
+                </div>
+                
+                <!-- ETFs -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-cog text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">ETFs</h3>
+                    <p class="text-gray-600 mb-6">
+                        Take a position on a range of themes – including indices, sectors and geographies – by trading on our selection of 90+ ETFs.
+                    </p>
+                </div>
+                
+                <!-- Cryptocurrencies -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-mobile-alt text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cryptocurrencies</h3>
+                    <p class="text-gray-600 mb-6">
+                        Use CFDs to trade Bitcoin, Ethereum and other crypto securely, with leverage up to 2:1 and no need for a wallet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm text-gray-600">
+                Number of markets can vary. Data correct on 12 March 2025.
+            </p>
+        </div>
+    </section>
+
+    <!-- Start trading today -->
+    <section class="bg-blue-600 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8">Start trading today</h2>
+            <button class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-md font-medium">
+                Sign up now for free
+            </button>
+        </div>
+    </section>
+
+    <!-- Live prices -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Live prices</h2>
+            
+            <div class="flex flex-wrap gap-4 mb-8">
+                <button id="trending-btn" class="market-tab bg-gray-900 text-white px-6 py-2 rounded-md font-medium" data-market="trending">Trending</button>
+                <button id="forex-btn" class="market-tab bg-gray-200 text-gray-700 px-6 py-2 rounded-md font-medium hover:bg-gray-300" data-market="forex">Forex</button>
+                <button id="commodities-btn" class="market-tab bg-gray-200 text-gray-700 px-6 py-2 rounded-md font-medium hover:bg-gray-300" data-market="commodities">Commodities</button>
+                <button id="indices-btn" class="market-tab bg-gray-200 text-gray-700 px-6 py-2 rounded-md font-medium hover:bg-gray-300" data-market="indices">Indices</button>
+                <button id="shares-btn" class="market-tab bg-gray-200 text-gray-700 px-6 py-2 rounded-md font-medium hover:bg-gray-300" data-market="shares">24 Hr Shares</button>
+                <button id="etfs-btn" class="market-tab bg-gray-200 text-gray-700 px-6 py-2 rounded-md font-medium hover:bg-gray-300" data-market="etfs">ETFs</button>
+            </div>
+            
+            <!-- Price Table -->
+            <div class="bg-white border rounded-lg overflow-hidden">
+                <!-- Table Header -->
+                <div class="grid grid-cols-5 gap-4 p-4 bg-gray-50 border-b text-sm font-medium text-gray-600">
+                    <div>Instrument</div>
+                    <div class="text-center">Bid</div>
+                    <div class="text-center">Ask</div>
+                    <div class="text-center">Spread</div>
+                    <div class="text-center">Action</div>
+                </div>
+                
+                <!-- Trending Table -->
+                <div id="trending-table" class="market-table">
+                    <!-- Gold Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-yellow-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">Au</span>
+                            <div>
+                                <div class="font-medium">Gold</div>
+                                <div class="text-sm text-gray-500">(XAUUSD)</div>
+                            </div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">3488.41</div>
+                        <div class="text-center text-red-600 font-medium">3488.64</div>
+                        <div class="text-center">0.23</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Bitcoin Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-orange-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">₿</span>
+                            <div class="font-medium">Bitcoin</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">108029.77</div>
+                        <div class="text-center text-red-600 font-medium">108044.77</div>
+                        <div class="text-center">15</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- AUDUSD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">AU</span>
+                            <div class="font-medium">AUDUSD</div>
+                        </div>
+                        <div class="text-center font-medium">0.65464</div>
+                        <div class="text-center text-red-600 font-medium">0.65465</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- EURUSD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">EU</span>
+                            <div class="font-medium">EURUSD</div>
+                        </div>
+                        <div class="text-center text-red-600 font-medium">1.17315</div>
+                        <div class="text-center text-red-600 font-medium">1.17315</div>
+                        <div class="text-center">0</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- AUS200 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-green-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">A2</span>
+                            <div class="font-medium">AUS200</div>
+                        </div>
+                        <div class="text-center font-medium">8923.7</div>
+                        <div class="text-center font-medium">8925.5</div>
+                        <div class="text-center">1.8</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- NAS100 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-purple-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">N1</span>
+                            <div class="font-medium">NAS100</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">23386</div>
+                        <div class="text-center text-green-600 font-medium">23387.3</div>
+                        <div class="text-center">1.3</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Forex Table -->
+                <div id="forex-table" class="market-table hidden">
+                    <!-- EURUSD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">EU</span>
+                            <div class="font-medium">EURUSD</div>
+                        </div>
+                        <div class="text-center text-red-600 font-medium">1.17315</div>
+                        <div class="text-center text-red-600 font-medium">1.17315</div>
+                        <div class="text-center">0</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- GBPUSD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-red-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">GB</span>
+                            <div class="font-medium">GBPUSD</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">1.2845</div>
+                        <div class="text-center text-green-600 font-medium">1.2846</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- USDJPY Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-red-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">JP</span>
+                            <div class="font-medium">USDJPY</div>
+                        </div>
+                        <div class="text-center font-medium">156.42</div>
+                        <div class="text-center font-medium">156.43</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- AUDUSD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">AU</span>
+                            <div class="font-medium">AUDUSD</div>
+                        </div>
+                        <div class="text-center font-medium">0.65464</div>
+                        <div class="text-center text-red-600 font-medium">0.65465</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- USDCAD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-red-700 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">CA</span>
+                            <div class="font-medium">USDCAD</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">1.4325</div>
+                        <div class="text-center text-green-600 font-medium">1.4326</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- NZDUSD Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-green-700 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">NZ</span>
+                            <div class="font-medium">NZDUSD</div>
+                        </div>
+                        <div class="text-center text-red-600 font-medium">0.5842</div>
+                        <div class="text-center text-red-600 font-medium">0.5843</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Commodities Table -->
+                <div id="commodities-table" class="market-table hidden">
+                    <!-- Gold Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-yellow-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">Au</span>
+                            <div>
+                                <div class="font-medium">Gold</div>
+                                <div class="text-sm text-gray-500">(XAUUSD)</div>
+                            </div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">3486.2</div>
+                        <div class="text-center text-green-600 font-medium">3486.43</div>
+                        <div class="text-center">0.23</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Silver Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-gray-400 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">Ag</span>
+                            <div>
+                                <div class="font-medium">Silver</div>
+                                <div class="text-sm text-gray-500">(XAGUSD)</div>
+                            </div>
+                        </div>
+                        <div class="text-center font-medium">40.58</div>
+                        <div class="text-center font-medium">40.603</div>
+                        <div class="text-center">0.023</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Spot Brent Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">Br</span>
+                            <div class="font-medium">Spot Brent</div>
+                        </div>
+                        <div class="text-center font-medium">68.095</div>
+                        <div class="text-center font-medium">68.115</div>
+                        <div class="text-center">0.02</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Natural Gas Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-gray-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">NG</span>
+                            <div class="font-medium">Natural Gas</div>
+                        </div>
+                        <div class="text-center font-medium">2.961</div>
+                        <div class="text-center font-medium">2.965</div>
+                        <div class="text-center">0.004</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Wheat Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-yellow-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">Wh</span>
+                            <div class="font-medium">Wheat</div>
+                        </div>
+                        <div class="text-center font-medium">510.4</div>
+                        <div class="text-center font-medium">511.3</div>
+                        <div class="text-center">0.9</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indices Table -->
+                <div id="indices-table" class="market-table hidden">
+                    <!-- AUS200 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🇦🇺</span>
+                            <div class="font-medium">AUS200</div>
+                        </div>
+                        <div class="text-center font-medium">8923.7</div>
+                        <div class="text-center font-medium">8925.5</div>
+                        <div class="text-center">1.8</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- NAS100 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🇺🇸</span>
+                            <div class="font-medium">NAS100</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">23409.6</div>
+                        <div class="text-center text-green-600 font-medium">23410.9</div>
+                        <div class="text-center">1.3</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- HK50 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-red-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🇭🇰</span>
+                            <div class="font-medium">HK50</div>
+                        </div>
+                        <div class="text-center font-medium">25600.9</div>
+                        <div class="text-center font-medium">25605.9</div>
+                        <div class="text-center">5</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- GER40 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🇩🇪</span>
+                            <div class="font-medium">GER40</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">23997.4</div>
+                        <div class="text-center text-green-600 font-medium">23999.4</div>
+                        <div class="text-center">2</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- US30 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-700 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🇺🇸</span>
+                            <div class="font-medium">US30</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">45569.8</div>
+                        <div class="text-center text-green-600 font-medium">45572.4</div>
+                        <div class="text-center">2.6</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- US500 Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-red-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🇺🇸</span>
+                            <div class="font-medium">US500</div>
+                        </div>
+                        <div class="text-center text-green-600 font-medium">6463.1</div>
+                        <div class="text-center text-green-600 font-medium">6463.5</div>
+                        <div class="text-center">0.4</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 24 Hr Shares Table -->
+                <div id="shares-table" class="market-table hidden">
+                    <!-- Apple Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">🍎</span>
+                            <div class="font-medium">Apple</div>
+                        </div>
+                        <div class="text-center font-medium">232</div>
+                        <div class="text-center font-medium">232.1</div>
+                        <div class="text-center">0.1</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Tesla Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-red-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">T</span>
+                            <div class="font-medium">Tesla</div>
+                        </div>
+                        <div class="text-center font-medium">333.43</div>
+                        <div class="text-center font-medium">333.6</div>
+                        <div class="text-center">0.17</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Meta Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-500 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">∞</span>
+                            <div class="font-medium">Meta</div>
+                        </div>
+                        <div class="text-center font-medium">737.69</div>
+                        <div class="text-center font-medium">737.86</div>
+                        <div class="text-center">0.17</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Microsoft Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">⊞</span>
+                            <div class="font-medium">Microsoft</div>
+                        </div>
+                        <div class="text-center font-medium">506.85</div>
+                        <div class="text-center font-medium">507.25</div>
+                        <div class="text-center">0.4</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Nvidia Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-green-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">N</span>
+                            <div class="font-medium">Nvidia</div>
+                        </div>
+                        <div class="text-center font-medium">173.82</div>
+                        <div class="text-center font-medium">173.84</div>
+                        <div class="text-center">0.02</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ETFs Table -->
+                <div id="etfs-table" class="market-table hidden">
+                    <!-- Global Uranium ETF Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">UU</span>
+                            <div class="font-medium">Global Uranium ETF</div>
+                        </div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center">-</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- ARK Innovation ETF Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">AR</span>
+                            <div class="font-medium">ARK Innovation ETF</div>
+                        </div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center">-</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Lithium ETF Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">LIT</span>
+                            <div class="font-medium">Lithium ETF</div>
+                        </div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center">-</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- India 50 ETF Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 border-b items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-black rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">50</span>
+                            <div class="font-medium">India 50 ETF</div>
+                        </div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center">-</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                    
+                    <!-- VanEck Vectors Gold Miners ETF Row -->
+                    <div class="grid grid-cols-5 gap-4 p-4 items-center">
+                        <div class="flex items-center">
+                            <span class="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center text-white text-xs font-bold">VE</span>
+                            <div class="font-medium">VanEck Vectors Gold Miners ETF</div>
+                        </div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center font-medium">-</div>
+                        <div class="text-center">-</div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium">Trade</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-sm text-gray-500 mt-4">
+                Live prices are indicative only. Check your platform for the most up to date prices. Powered by Pepperstone Group Limited.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why trade global markets using CFDs section -->
+    <section class="bg-gray-50 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">Why trade global markets using CFDs?</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+                    CFDs are derivative products that track the price of underlying financial markets like forex, indices, shares and commodities. They offer a range of potential advantages compared to trading the asset itself.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Trade with leverage -->
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Trade with leverage</h3>
+                    <p class="text-gray-600">
+                        to keep entry costs down and amplify any profits – and losses.
+                    </p>
+                </div>
+                
+                <!-- Go long or short -->
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Go long or short</h3>
+                    <p class="text-gray-600">
+                        to capitalise on both rising and falling markets.
+                    </p>
+                </div>
+                
+                <!-- Access thousands of markets -->
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Access thousands of markets</h3>
+                    <p class="text-gray-600">
+                        from a single trading account.
+                    </p>
+                </div>
+                
+                <!-- Trade beyond normal market hours -->
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Trade beyond normal market hours</h3>
+                    <p class="text-gray-600">
+                        with select instruments available 24/7.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn more about CFDs section -->
+    <section class="bg-blue-600 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8">Learn more about CFDs</h2>
+            <button class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-md font-medium">
+                Learn to trade
+            </button>
+        </div>
+    </section>
+
+    <!-- Ready to trade better section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">Ready to trade better?</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+                    Switch to Pepperstone now and join our global community of over 750,000 traders.<sup>2</sup> Apply in minutes with our simple application process.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-blue-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Register</h3>
+                    <p class="text-gray-600">
+                        Sign up with your email address and get a free demo.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-blue-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Answer</h3>
+                    <p class="text-gray-600">
+                        We'll check your suitability for our products.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-blue-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Verify</h3>
+                    <p class="text-gray-600">
+                        Your safety is our top priority.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="text-6xl font-bold text-blue-600 mb-4">4</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Fund</h3>
+                    <p class="text-gray-600">
+                        That's it! You're ready to trade.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-sm text-gray-500 space-y-2">
+                <p><sup>1</sup> 24-hour trading, 5 days a week on select US share and CFDs. For exact timings, please refer to the instrument specifications in your trading platform.</p>
+                <p><sup>2</sup> Data for Pepperstone Group, correct as of 1 April 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Other sites -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Other sites</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Trade Off</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Partners</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Group</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Ways to trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Ways to trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading accounts</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pro</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Active Trader program</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Refer a friend</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading hours</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Platforms -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Platforms</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading Platforms</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading tools</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Markets & Symbols -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Markets & Symbols</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Forex</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Shares</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">ETFs</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Commodities</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Currency indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Cryptocurrencies</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">CFD Forwards</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Additional Footer Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Analysis -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Analysis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Navigating Markets</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Daily Fix</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Meet the analysts</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Learn to Trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Learn to Trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading guides</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Videos</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Webinars</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex items-center mb-6">
+                    <img src="public/download.svg" alt="Pepperstone" class="h-8">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-gray-900">support@pepperstone.com</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">1786 628 1209</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">#1 Pineapple House,</p>
+                        <p class="text-gray-900">Old Fort Bay, Nassau,</p>
+                        <p class="text-gray-900">New Providence, The Bahamas</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex flex-wrap gap-8 mb-8">
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Legal documents</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Privacy policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Website terms and conditions</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Cookie policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Sitemap</a>
+                </div>
+                
+                <div class="text-sm text-gray-600 space-y-4">
+                    <p>© 2025 Pepperstone Markets Limited | Company registration number 177174 B | SIA-F217</p>
+                    
+                    <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.</p>
+                    
+                    <p><strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong></p>
+                    
+                    <p>You should consider whether you understand how CFDs work, and whether you can afford to take the high risk of losing your money.</p>
+                    
+                    <p>You don't own or have rights in the underlying assets. Past performance is no indication of future performance and tax laws are subject to change. The information on this website is general in nature and doesn't take into account your or your client's personal objectives, financial circumstances, or needs. Please read our <a href="#" class="text-blue-600 hover:text-blue-700">RDN</a> and other <a href="#" class="text-blue-600 hover:text-blue-700">legal documents</a> and ensure you fully understand the risks before you make any trading decisions. We encourage you to seek independent advice.</p>
+                    
+                    <p>Pepperstone Markets Limited is located at</p>
+                    
+                    <p>#1 Pineapple House, Old Fort Bay, Nassau, New Providence, The Bahamas</p>
+                    
+                    <p>and is licensed and regulated by The Securities Commission of The Bahamas,( SIA-F217).</p>
+                    
+                    <p>The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Market tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const marketTabs = document.querySelectorAll('.market-tab');
+            const marketTables = document.querySelectorAll('.market-table');
+            
+            marketTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const market = this.getAttribute('data-market');
+                    
+                    // Remove active class from all tabs
+                    marketTabs.forEach(t => {
+                        t.classList.remove('bg-gray-900', 'text-white');
+                        t.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+                    
+                    // Add active class to clicked tab
+                    this.classList.remove('bg-gray-200', 'text-gray-700');
+                    this.classList.add('bg-gray-900', 'text-white');
+                    
+                    // Hide all tables
+                    marketTables.forEach(table => {
+                        table.classList.add('hidden');
+                    });
+                    
+                    // Show selected table
+                    const selectedTable = document.getElementById(market + '-table');
+                    if (selectedTable) {
+                        selectedTable.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Analysis - Pepperstone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Cookie Banner -->
+    <div class="bg-gray-100 border-b border-gray-200 py-3 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-700 mb-2 md:mb-0">
+                We use cookies to provide you with the best possible experience. By continuing to use this website, you agree to our use of cookies. 
+                <a href="https://eu-assets.contentstack.com/v3/assets/bltaec35894448c7261/blt4850f32e3681dfc5/SCB_Cookie_Policy_ROW.pdf" class="underline">Cookie Policy.</a>
+            </p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-md text-sm">Close</button>
+        </div>
+    </div>
+
+    <!-- Risk Warning -->
+    <div class="bg-white-600 text-black py-2 px-4">
+        <div class="container mx-auto text-center text-sm">
+            CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong> You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+        </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <div class="bg-black-100 py-2 px-4 border-b">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Pro</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Partners</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Help and support</a>
+            </div>
+            <div class="relative">
+                <button class="flex items-center text-gray-700 hover:text-blue-600">
+                    <span class="mr-1">English</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">繁体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ไทย</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tiếng Việt</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">لغة عربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <img src="public/download.svg" alt="Pepperstone" class="h-10">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-6">
+                    <div class="dropdown relative">
+                        <a href="ways-to-trade.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Ways to trade <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Trading accounts</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Premium clients</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pricing</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Professional</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Active trader program</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="markets.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Markets <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Forex CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Commodity CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cryptocurrency CFDs</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shares CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ETF CFDs</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="trading-platforms.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Trading platforms <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">TradingView</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 5</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Pepperstone platform</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 4</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-blue-600 hover:text-blue-700 flex items-center border-b-2 border-blue-600 pb-4">
+                            Market analysis <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Navigating markets</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Daily Fix</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meet the analysts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                            About us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Who we are</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Awards</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Careers</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md">
+                        Open account
+                    </button>
+                    <button class="text-blue-600 hover:text-blue-700 border border-blue-600 px-6 py-2 rounded-md">
+                        Log in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white py-4">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-600">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-900">Market Analysis</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    Market Analysis
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Never miss an opportunity with high impact economic event coverage, expert commentary, videos and more from our global market analysts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigating Markets Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900">Navigating Markets</h2>
+                <i class="fas fa-chevron-right ml-2 text-gray-400"></i>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Left Article -->
+                <div class="flex gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 leading-tight">
+                            Lots Of Noise, But Little To Move The Needle
+                        </h3>
+                        <div class="text-sm text-gray-500 mb-2">3 hours ago</div>
+                        <div class="text-blue-600 font-medium">Daily Market Thoughts</div>
+                    </div>
+                    <div class="w-80 flex-shrink-0">
+                        <img src="public/a_stock_market_graph.jpeg" alt="Stock Market Graph" class="w-full h-48 object-cover">
+                    </div>
+                </div>
+
+                <!-- Right Article -->
+                <div>
+                    <img src="public/Gold_bars.jpg" alt="Gold Bars" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 leading-tight">
+                        A Traders' Week Ahead Playbook: September Risks, Nonfarm Payrolls Fed Policy, and Market Set-Ups
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">10 hours ago</div>
+                    <div class="flex gap-2">
+                        <span class="text-blue-600 font-medium">Gold</span>
+                        <span class="text-blue-600 font-medium">USD</span>
+                        <span class="text-blue-600 font-medium">NVIDIA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Article 1 -->
+                <div>
+                    <img src="public/Gold_on_money.jpg" alt="Gold on Money" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        Gold's Stealth Rally: Payrolls and Fed Policy Will Decide the Next Break
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 29, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">Gold</span>
+                        <span class="text-blue-600 font-medium">USD</span>
+                        <span class="text-blue-600 font-medium">FOMC</span>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div>
+                    <img src="public/nVidia.jpg" alt="NVIDIA" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        Nvidia Earnings Reaction: Failed to Meet a Very High Bar, Pullbacks Should Be a Buying Opportunity
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 28, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">NVIDIA</span>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div>
+                    <img src="public/federal-reserve-creates-risk-scenario.jpg" alt="Federal Reserve" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        A Trump-Constructed Fed – Implications for Gold and the USD
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 27, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">USD</span>
+                        <span class="text-blue-600 font-medium">FOMC</span>
+                        <span class="text-blue-600 font-medium">Gold</span>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div>
+                    <img src="public/NVIDIA-26_02_25.jpg" alt="NVIDIA Earnings" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        Nvidia Q2 2026 Earnings: Key Expectations and Market Implications
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 25, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">NVIDIA</span>
+                        <span class="text-blue-600 font-medium">NAS100</span>
+                        <span class="text-blue-600 font-medium">AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Trade Off Section -->
+    <section class="relative py-16 overflow-hidden" style="background-image: url('public/TTO-SplitBanner-240730-v01-860x468.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-lg">
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+                    The Trade Off
+                </h2>
+                <p class="text-xl text-white mb-8 leading-relaxed">
+                    Tune in to 'The Trade Off', a weekly debate of the financial markets.
+                </p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold">
+                    Watch Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            const button = dropdown.querySelector('button');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                menu.classList.toggle('hidden');
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex flex-wrap gap-8 mb-8">
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Legal documents</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Privacy policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Website terms and conditions</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Cookie policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Sitemap</a>
+                </div>
+                
+                <div class="text-sm text-gray-600 space-y-4">
+                    <p>© 2025 Pepperstone Markets Limited | Company registration number 177174 B | SIA-F217</p>
+                    
+                    <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.</p>
+                    
+                    <p><strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong></p>
+                    
+                    <p>You should consider whether you understand how CFDs work, and whether you can afford to take the high risk of losing your money.</p>
+                    
+                    <p>You don't own or have rights in the underlying assets. Past performance is no indication of future performance and tax laws are subject to change. The information on this website is general in nature and doesn't take into account your or your client's personal objectives, financial circumstances, or needs. Please read our <a href="#" class="text-blue-600 hover:text-blue-700">RDN</a> and other <a href="#" class="text-blue-600 hover:text-blue-700">legal documents</a> and ensure you fully understand the risks before you make any trading decisions. We encourage you to seek independent advice.</p>
+                    
+                    <p>Pepperstone Markets Limited is located at</p>
+                    
+                    <p>#1 Pineapple House, Old Fort Bay, Nassau, New Providence, The Bahamas</p>
+                    
+                    <p>and is licensed and regulated by The Securities Commission of The Bahamas,( SIA-F217).</p>
+                    
+                    <p>The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

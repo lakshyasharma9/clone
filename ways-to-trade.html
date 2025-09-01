@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to Trade - Pepperstone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Cookie Banner -->
+    <div class="bg-gray-100 border-b border-gray-200 py-3 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-700 mb-2 md:mb-0">
+                We use cookies to provide you with the best possible experience. By continuing to use this website, you agree to our use of cookies. 
+                <a href="https://eu-assets.contentstack.com/v3/assets/bltaec35894448c7261/blt4850f32e3681dfc5/SCB_Cookie_Policy_ROW.pdf" class="underline">Cookie Policy.</a>
+            </p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-md text-sm">Close</button>
+        </div>
+    </div>
+
+    <!-- Risk Warning -->
+    <div class="bg-white-600 text-black py-2 px-4">
+        <div class="container mx-auto text-center text-sm">
+            CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong> You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+        </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <div class="bg-black-100 py-2 px-4 border-b">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Pro</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Partners</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-sm">Help and support</a>
+            </div>
+            <div class="relative">
+                <button class="flex items-center text-gray-700 hover:text-blue-600">
+                    <span class="mr-1">English</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">繁体中文</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ไทย</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tiếng Việt</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">لغة عربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <img src="public/download.svg" alt="Pepperstone" class="h-10">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-6">
+                    <div class="dropdown relative">
+                        <button class="text-blue-600 hover:text-blue-700 flex items-center border-b-2 border-blue-600 pb-4">
+                            Ways to trade <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Trading accounts</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Premium clients</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pricing</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Professional</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Active trader program</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="markets.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Markets <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Forex CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Commodity CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cryptocurrency CFDs</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shares CFDs</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ETF CFDs</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="trading-platforms.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Trading platforms <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">TradingView</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 5</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Pepperstone platform</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">MetaTrader 4</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <a href="market-analysis.html" class="text-gray-700 hover:text-blue-600 flex items-center">
+                            Market analysis <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Navigating markets</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">The Daily Fix</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meet the analysts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                            About us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Who we are</a>
+                            <div class="border-t my-1"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Company news</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Company awards</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Login</a>
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md">Join now</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white py-4">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-600">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-900">Ways to Trade</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="bg-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <h1 class="text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                        Why trade with Pepperstone?
+                    </h1>
+                    
+                    <div class="text-lg text-gray-600 leading-relaxed">
+                        <p>
+                            Trading with Pepperstone means experiencing service built by traders, for traders. Take a look at some of the reasons why traders all over the world choose Pepperstone as their go-to provider: - A powerful suite of platforms including MetaTrader, TradingView and our very own Pepperstone Trading Platform. - CFDs on multiple asset classes available for trading, such as Forex, commodities, indices and shares. - Fast execution, deep liquidity, tight spreads and sharp pricing across all available markets. - Multi-lingual customer support available around the clock, 5 days a week.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Image -->
+                <div class="flex justify-center lg:justify-end">
+                    <img src="public/person_trading_stock_on_device.jpg" alt="Person trading stocks on device" class="w-full max-w-lg">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pricing Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Pricing</h2>
+            
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        <strong>Spreads:</strong> Experience competitive spreads on our platform. Spreads represent the difference between buying and selling prices, measured in pips, ensuring transparent pricing for your trades.
+                    </p>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        <strong>Commissions:</strong> Enjoy transparent pricing with our commission structure. Commissions are applicable primarily on Razor accounts for CFD trading, ensuring fair and straightforward costs. Whether you're trading Forex, shares, or ETFs, we offer clear commission rates.
+                    </p>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        <strong>Swap Rates:</strong> Maximise your trading potential with our favourable swap rates. Earn or pay rollover interest rates for holding positions overnight, ensuring your trading strategy is optimised with our funding adjustments.
+                    </p>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        <strong>Deep Liquidity:</strong> Unlock trading potential with our deep liquidity, ensuring seamless transactions without slippage and transparent pricing.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-8 py-3 rounded-full font-medium">
+                    Compare our prices
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Accounts Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Trading accounts</h2>
+            
+            <p class="text-lg text-gray-600 mb-8">
+                We know every trader is different. We have two trading accounts to meet your needs.
+            </p>
+            
+            <div class="mb-8">
+                <p class="text-lg text-gray-600 mb-4">
+                    <strong>Standard</strong> - A wider spread-based account. No commission.
+                </p>
+                
+                <p class="text-lg text-gray-600">
+                    <strong>Razor</strong> - A low-cost trading account with raw spreads and a commission charge.
+                </p>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-6">Included on every account:</h3>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                        <p class="text-lg text-gray-600">Minimum 0.01 lots trading size</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                        <p class="text-lg text-gray-600">Maximum 100 lots trading size</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                        <p class="text-lg text-gray-600">No minimum account opening balance</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                        <p class="text-lg text-gray-600">Base currencies available: AUD, USD, JPY, GBP, EUR, CAD, CHF, NZD, SGD and HKD</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                        <p class="text-lg text-gray-600">Multiple payment methods: Visa, Mastercard, Bank transfer, BPay, PayPal</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <a href="#" class="text-blue-600 hover:text-blue-700 underline text-lg">
+                    Lean more about funding and withdrawals
+                </a>
+            </div>
+            
+            <div>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-8 py-3 rounded-full font-medium">
+                    Compare trading accounts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Pro</h2>
+            
+            <p class="text-lg text-gray-600 mb-8">
+                As a Pepperstone Pro client, gain access to higher leverage, exclusive account features and qualify for our popular Active Trader program where you can earn cash rebates for your trades.
+            </p>
+            
+            <div>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-8 py-3 rounded-full font-medium">
+                    Learn more about Pro
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Premium</h2>
+            
+            <p class="text-lg text-gray-600 mb-6">
+                Our premium client service caters to retail and Pro clients, and offers exceptional priority service, tailored to recognise and serve our high-volume premium traders.
+            </p>
+            
+            <p class="text-lg text-gray-600 mb-8">
+                Only Pro clients can access exclusive rewards, discounts and bespoke benefits.
+            </p>
+            
+            <div>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-8 py-3 rounded-full font-medium">
+                    Learn more about our Premium service
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Other sites -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Other sites</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Trade Off</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Partners</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Group</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Ways to trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Ways to trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading accounts</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pro</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Active Trader program</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Refer a friend</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading hours</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Platforms -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Platforms</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading Platforms</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading tools</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Markets & Symbols -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Markets & Symbols</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Forex</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Shares</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">ETFs</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Commodities</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Currency indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Cryptocurrencies</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">CFD Forwards</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Additional Footer Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Analysis -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Analysis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Navigating Markets</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Daily Fix</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Meet the analysts</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Learn to Trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Learn to Trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading guides</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Videos</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Webinars</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex items-center mb-6">
+                    <img src="public/download.svg" alt="Pepperstone" class="h-8">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-gray-900">support@pepperstone.com</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">1786 628 1209</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">#1 Pineapple House,</p>
+                        <p class="text-gray-900">Old Fort Bay, Nassau,</p>
+                        <p class="text-gray-900">New Providence, The Bahamas</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex flex-wrap gap-8 mb-8">
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Legal documents</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Privacy policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Website terms and conditions</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Cookie policy</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600">Sitemap</a>
+                </div>
+                
+                <div class="text-sm text-gray-600 space-y-4">
+                    <p>© 2025 Pepperstone Markets Limited | Company registration number 177174 B | SIA-F217</p>
+                    
+                    <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.</p>
+                    
+                    <p><strong>81.1% of retail investor accounts lose money when trading CFDs with this provider.</strong></p>
+                    
+                    <p>You should consider whether you understand how CFDs work, and whether you can afford to take the high risk of losing your money.</p>
+                    
+                    <p>You don't own or have rights in the underlying assets. Past performance is no indication of future performance and tax laws are subject to change. The information on this website is general in nature and doesn't take into account your or your client's personal objectives, financial circumstances, or needs. Please read our <a href="#" class="text-blue-600 hover:text-blue-700">RDN</a> and other <a href="#" class="text-blue-600 hover:text-blue-700">legal documents</a> and ensure you fully understand the risks before you make any trading decisions. We encourage you to seek independent advice.</p>
+                    
+                    <p>Pepperstone Markets Limited is located at</p>
+                    
+                    <p>#1 Pineapple House, Old Fort Bay, Nassau, New Providence, The Bahamas</p>
+                    
+                    <p>and is licensed and regulated by The Securities Commission of The Bahamas,( SIA-F217).</p>
+                    
+                    <p>The information on this site and the products and services offered are not intended for distribution to any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
