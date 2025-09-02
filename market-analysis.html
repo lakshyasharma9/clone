@@ -119,11 +119,11 @@
                     </div>
                     
                     <div class="dropdown relative">
-                        <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                        <a href="about-us.html" class="text-gray-700 hover:text-blue-600 flex items-center">
                             About us <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                        </button>
+                        </a>
                         <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-64 z-10">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Who we are</a>
+                            <a href="about-us.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Who we are</a>
                             <div class="border-t my-1"></div>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Awards</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Careers</a>
@@ -135,9 +135,9 @@
                     <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md">
                         Open account
                     </button>
-                    <button class="text-blue-600 hover:text-blue-700 border border-blue-600 px-6 py-2 rounded-md">
+                    <a href="login.html" class="text-blue-600 hover:text-blue-700 border border-blue-600 px-6 py-2 rounded-md">
                         Log in
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -287,26 +287,229 @@
         </div>
     </section>
 
-    <script>
-        // Dropdown functionality
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            const button = dropdown.querySelector('button');
-            const menu = dropdown.querySelector('.dropdown-menu');
+    <!-- The Daily Fix Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900">The Daily Fix</h2>
+                <i class="fas fa-chevron-right ml-2 text-gray-400"></i>
+            </div>
             
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                menu.classList.toggle('hidden');
-            });
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Left Article -->
+                <div class="flex gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 leading-tight">
+                            The Powell Pivot – Three Scenarios Traders Are Watching
+                        </h3>
+                        <div class="text-sm text-gray-500 mb-2">Aug 25, 2025</div>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-blue-600 font-medium">USD</span>
+                            <span class="text-blue-600 font-medium">Gold</span>
+                            <span class="text-blue-600 font-medium">NAS100</span>
+                        </div>
+                    </div>
+                    <div class="w-80 flex-shrink-0">
+                        <img src="public/trump2.png" alt="Federal Reserve" class="w-full h-48 object-cover">
+                    </div>
+                </div>
+
+                <!-- Right Article -->
+                <div>
+                    <img src="public/federal-reserve-creates-risk-scenario.jpg" alt="Powell Jackson Hole" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 leading-tight">
+                        Powell's Jackson Hole Speech in Focus as Fed Credibility Faces Test
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 22, 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis Grid -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-end mb-8">
+                <div class="flex gap-4">
+                    <span class="text-blue-600 font-medium">USD</span>
+                    <span class="text-blue-600 font-medium">NVIDIA</span>
+                    <span class="text-blue-600 font-medium">Gold</span>
+                </div>
+            </div>
             
-            document.addEventListener('click', (e) => {
-                if (!dropdown.contains(e.target)) {
-                    menu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Article 1 -->
+                <div>
+                    <img src="public/bull-846x480.jpg" alt="Bull Market" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        Equity Markets Rebound as the Bulls Push Back: S&P500 and NAS100 Rally to Session Highs
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 5, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">USD</span>
+                        <span class="text-blue-600 font-medium">VIX</span>
+                        <span class="text-blue-600 font-medium">NVIDIA</span>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div>
+                    <img src="public/volatility-ahead-picture-id184924623.jpg" alt="Market Volatility" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        Markets Reassess Risk After US Payrolls Revisions and Rising Left-Tail Risk
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Aug 4, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">VIX</span>
+                        <span class="text-blue-600 font-medium">US500</span>
+                        <span class="text-blue-600 font-medium">USD</span>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div>
+                    <img src="public/Gold_bars.jpg" alt="Gold Bars" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        Gold Surges Towards $3400 as US Dollar Falls – Is a New Bull Trend Underway?
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Jul 22, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">Gold</span>
+                        <span class="text-blue-600 font-medium">USD</span>
+                        <span class="text-blue-600 font-medium">Silver</span>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div>
+                    <img src="public/TheDailyFix-240716Trump2-WebsiteBanner-1920x1080-01.jpg" alt="Trump Analysis" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                        US Risk Appetite Surges as OBBBA Clears Congress and S&P500 Hits New High
+                    </h3>
+                    <div class="text-sm text-gray-500 mb-3">Jul 4, 2025</div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-blue-600 font-medium">USD</span>
+                        <span class="text-blue-600 font-medium">US500</span>
+                        <span class="text-blue-600 font-medium">NAS100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Trade Section -->
+    <section class="bg-blue-600 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+                Ready to trade?
+            </h2>
+            <p class="text-xl text-white mb-8 max-w-3xl mx-auto">
+                It's quick and easy to get started. Apply in minutes with our simple application process.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-3 rounded-md font-semibold">
+                    Get started
+                </button>
+                <button class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-md font-semibold">
+                    Subscribe to The Daily Fix
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Other sites -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Other sites</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Trade Off</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Partners</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Group</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Ways to trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Ways to trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading accounts</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Pro</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Active Trader program</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Refer a friend</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading hours</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Platforms -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Platforms</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading Platforms</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading tools</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Markets & Symbols -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Markets & Symbols</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Forex</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Shares</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">ETFs</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Commodities</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Currency indices</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Cryptocurrencies</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">CFD Forwards</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Additional Footer Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Analysis -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Analysis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Navigating Markets</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">The Daily Fix</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Meet the analysts</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Learn to Trade -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">Learn to Trade</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Trading guides</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Videos</a></li>
+                        <li><a href="#" class="text-gray-900 hover:text-blue-600">Webinars</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-12 pt-8 border-t">
+                <div class="flex items-center mb-6">
+                    <img src="public/download.svg" alt="Pepperstone" class="h-8">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-gray-900">support@pepperstone.com</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">1786 628 1209</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900">#1 Pineapple House,</p>
+                        <p class="text-gray-900">Old Fort Bay, Nassau,</p>
+                        <p class="text-gray-900">New Providence, The Bahamas</p>
                     </div>
                 </div>
                 
@@ -352,6 +555,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            const button = dropdown.querySelector('button');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                menu.classList.toggle('hidden');
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+                    </div>
+                </div>
+                
+
+                
 
     <script src="script.js"></script>
 </body>
